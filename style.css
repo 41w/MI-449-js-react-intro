@@ -1,0 +1,13 @@
+.princess {
+  width: 50%;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #030359;
+  color: white;
+}
+
+table, th, td{
+  border: 1px double white;
+}
