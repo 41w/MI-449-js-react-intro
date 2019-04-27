@@ -1,13 +1,33 @@
+class UnderConstruction extends React.Component {
+  render () {
+    return (
+      <img src={this.props.underconstruction} alt='Under Construction' />
+    )
+  }
+}
+
+class Gif extends React.Component {
+  render () {
+    return (
+      <div>
+        <img src={this.props.gif} />
+      </div>
+    )
+  }
+}
+
 class Image extends React.Component {
   render () {
     return (
       <main>
         <h1> This page is </h1>
-        <img src={this.props.underconstruction} alt='Under Construction' />
+        <UnderConstruction
+          underconstruction='https://images-na.ssl-images-amazon.com/images/I/51bHBllp1yL._SX425_.jpg'
+        />
         <h1> to be the best "Disney" Site on the web </h1>
-        <div>
-          <img src={this.props.gifsource} />
-        </div>
+        <Gif
+          gif='https://www.hover.com/wp-content/uploads/2014/09/gif-5.gif'
+        />
         <table>
           {pictures.map((p) => (
             <tr>
@@ -46,8 +66,6 @@ var pictures = [
 
 ReactDOM.render(
   <Image
-    underconstruction='https://images-na.ssl-images-amazon.com/images/I/51bHBllp1yL._SX425_.jpg'
-    gifsource='https://www.hover.com/wp-content/uploads/2014/09/gif-5.gif'
     pictures={pictures}
   />,
   document.getElementById('container')
