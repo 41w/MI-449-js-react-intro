@@ -3,9 +3,12 @@
 }
 
 body {
-  margin: 0 auto;
   background-color: #030359;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 table, th, td{

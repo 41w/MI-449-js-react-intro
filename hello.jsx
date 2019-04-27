@@ -3,10 +3,10 @@ class Image extends React.Component {
     return (
       <main>
         <h1> This page is </h1>
-        <img src='https://images-na.ssl-images-amazon.com/images/I/51bHBllp1yL._SX425_.jpg' alt='Under Construction' />
+        <img src={this.props.underconstruction} alt='Under Construction' />
         <h1> to be the best "Disney" Site on the web </h1>
         <div>
-          <img src={this.props.source} />
+          <img src={this.props.gifsource} />
         </div>
         <table>
           {pictures.map((p) => (
@@ -46,8 +46,8 @@ var pictures = [
 
 ReactDOM.render(
   <Image
-
-    source='https://www.hover.com/wp-content/uploads/2014/09/gif-5.gif'
+    underconstruction='https://images-na.ssl-images-amazon.com/images/I/51bHBllp1yL._SX425_.jpg'
+    gifsource='https://www.hover.com/wp-content/uploads/2014/09/gif-5.gif'
     pictures={pictures}
   />,
   document.getElementById('container')
